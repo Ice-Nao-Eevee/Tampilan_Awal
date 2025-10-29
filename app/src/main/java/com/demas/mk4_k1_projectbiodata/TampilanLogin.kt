@@ -1,28 +1,20 @@
 package com.demas.mk4_k1_projectbiodata
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class TampilanLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.tampilan_awal)
+        setContentView(R.layout.activity_tampilan_login)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-
-        val btnawal1: Button = findViewById(R.id.btnawal)
-        btnawal1.setOnClickListener {
-            val btnawal11 = Intent(this,TampilanLogin::class.java)
-            startActivity(btnawal11)
         }
     }
 }

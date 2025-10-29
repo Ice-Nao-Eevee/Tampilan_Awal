@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.MK4_k1_ProjectBiodata" parent="Base.Theme.MK4_k1_ProjectBiodata" />
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
